@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Amazing flat at Passage Ideal",
+    "lat": 52.48054210735575,
+    "lng": 13.435835487092247,
+    "price": 45,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/823ac5d3-1e5a-45d8-ab9b-25d7520a188b.jpg?aki_policy=medium",
+    "rating": 2
+  },
+  {
+    "name": "Spacious Loft (73m²) with Large Roof Terrace",
+    "lat": 52.479951086588564,
+    "lng": 13.439348091158159,
+    "price": 45,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/45bb3381-13a2-47dd-b6e0-8a0b51c5711d.jpg?aki_policy=medium",
+    "rating": 2
+  },
+  {
+    "name": "Room in the heart of Berlin nicest area",
+    "lat": 52.47427683059337,
+    "lng": 13.447508780860986,
+    "price": 18,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/3156a428-1c4b-4728-b589-7cf9cb1629b9.jpg?aki_policy=medium",
+    "rating": 5
+  },
+  {
+    "name": "2,5 Room Apartment Neukölln, Berlin",
+    "lat": 52.482083092439076,
+    "lng": 13.44782488900003,
+    "price": 50,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/5092281/c3c3a4fd_original.jpg?aki_policy=medium",
+    "rating": 3
+  },
+  {
+    "name": "Vintage apartment in  Neukölln",
+    "lat": 52.47153128334599,
+    "lng": 13.4415726317228,
+    "price": 65,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/75708397/ec99a407_original.jpg?aki_policy=medium",
+    "rating": 3
+  },
+  {
+    "name": "cosy flat in vibrant Neukölln",
+    "lat": 52.477353033374236,
+    "lng": 13.439686758941438,
+    "price": 40,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/2c4f2c50-cbe0-41c3-8e0e-e84f127aa096.jpg?aki_policy=medium",
+    "rating": 3
+  },
+  {
+    "name": "helle WG-Zimmer in saniertem Altbau",
+    "lat": 52.47799970225785,
+    "lng": 13.447921756565798,
+    "price": 20,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/96819451/ce320ef2_original.jpg?aki_policy=medium",
+    "rating": 5
+  },
+  {
+    "name": "Cozy Room in Berlin Neukölln",
+    "lat": 52.48026826465264,
+    "lng": 13.436235239594666,
+    "price": 24,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/89187794/575b73fe_original.jpg?aki_policy=medium",
+    "rating": 4
+  },
+  {
+    "name": "Comfy + Hip, Top Location, Neukölln",
+    "lat": 52.48247905022002,
+    "lng": 13.443259185652476,
+    "price": 39,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/60831019-c701-4c68-ad10-e8a9c9dabb70.jpg?aki_policy=medium",
+    "rating": 3
+  },
+  {
+    "name": "Beautiful Botanic Furnished Room at Neukölln",
+    "lat": 52.47822869199337,
+    "lng": 13.440035311345117,
+    "price": 26,
+    "priceCurrency": "EUR",
+    "imageUrl": "https://a0.muscache.com/im/pictures/1f8ece83-233f-4259-86ac-6c592c0bb832.jpg?aki_policy=medium",
+    "rating": 5
+  }
+]
