@@ -1,0 +1,17 @@
+.flat {
+  width: 40%;
+  height: 50vh;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+
+  .flat-img {
+    border: 1px solid lightblue;
+    height: 50%;
+    margin-bottom: 20px;
+  }
+
+  .flat-info {
+    padding-left: 10px;
+  }
+}
