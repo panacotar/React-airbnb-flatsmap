@@ -1,5 +1,6 @@
 import React from "react";
 import "./Flat.scss";
+import PropTypes from "prop-types";
 
 const Flat = ({ imageUrl, name, price, priceCurrency, rating }) => {
   return (
@@ -18,7 +19,9 @@ const Flat = ({ imageUrl, name, price, priceCurrency, rating }) => {
         </div>
         <div className="price">
           <p>
-            <b>{price} {priceCurrency}</b>
+            <b>
+              {price} {priceCurrency}
+            </b>
           </p>
         </div>
       </div>
@@ -27,6 +30,14 @@ const Flat = ({ imageUrl, name, price, priceCurrency, rating }) => {
       </div>
     </div>
   );
+};
+
+Flat.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  priceCurrency: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default Flat;
