@@ -9,14 +9,21 @@ const Flat = ({ imageUrl, name, price, priceCurrency, rating }) => {
       </div>
       <div className="flat-info">
         <div className="rating">
-          <p>{rating} ⭐ </p>
-        </div>
-        <div className="description">
-          <p>{name}</p>
           <p>
-            {price} {priceCurrency}
+            <b>{rating}</b>{" "}
+            <span role="img" aria-label="star">
+              ⭐
+            </span>
           </p>
         </div>
+        <div className="price">
+          <p>
+            <b>{price} {priceCurrency}</b>
+          </p>
+        </div>
+      </div>
+      <div className="flat-description">
+        <p>{name}</p>
       </div>
     </div>
   );
