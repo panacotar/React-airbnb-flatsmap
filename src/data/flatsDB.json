@@ -1,5 +1,6 @@
 [
   {
+    "id": 324,
     "name": "Amazing flat at Passage Ideal",
     "lat": 52.48054210735575,
     "lng": 13.435835487092247,
@@ -9,6 +10,7 @@
     "rating": 2
   },
   {
+    "id": 325,
     "name": "Spacious Loft (73m²) with Large Roof Terrace",
     "lat": 52.479951086588564,
     "lng": 13.439348091158159,
@@ -18,6 +20,7 @@
     "rating": 2
   },
   {
+    "id": 326,
     "name": "Room in the heart of Berlin nicest area",
     "lat": 52.47427683059337,
     "lng": 13.447508780860986,
@@ -27,6 +30,7 @@
     "rating": 5
   },
   {
+    "id": 327,
     "name": "2,5 Room Apartment Neukölln, Berlin",
     "lat": 52.482083092439076,
     "lng": 13.44782488900003,
@@ -36,6 +40,7 @@
     "rating": 3
   },
   {
+    "id": 328,
     "name": "Vintage apartment in  Neukölln",
     "lat": 52.47153128334599,
     "lng": 13.4415726317228,
@@ -45,6 +50,7 @@
     "rating": 3
   },
   {
+    "id": 329,
     "name": "cosy flat in vibrant Neukölln",
     "lat": 52.477353033374236,
     "lng": 13.439686758941438,
@@ -54,6 +60,7 @@
     "rating": 3
   },
   {
+    "id": 330,
     "name": "helle WG-Zimmer in saniertem Altbau",
     "lat": 52.47799970225785,
     "lng": 13.447921756565798,
@@ -63,6 +70,7 @@
     "rating": 5
   },
   {
+    "id": 331,
     "name": "Cozy Room in Berlin Neukölln",
     "lat": 52.48026826465264,
     "lng": 13.436235239594666,
@@ -72,6 +80,7 @@
     "rating": 4
   },
   {
+    "id": 332,
     "name": "Comfy + Hip, Top Location, Neukölln",
     "lat": 52.48247905022002,
     "lng": 13.443259185652476,
@@ -81,6 +90,7 @@
     "rating": 3
   },
   {
+    "id": 333,
     "name": "Beautiful Botanic Furnished Room at Neukölln",
     "lat": 52.47822869199337,
     "lng": 13.440035311345117,
