@@ -6,8 +6,7 @@ import Flat from "./Flat";
 import Map from "./Map";
 
 const App = () => {
-  const { name, lat, lng, price, priceCurrency, imageUrl, rating } = flats[0];
-  console.log(name);
+  // const { name, lat, lng, price, priceCurrency, imageUrl, rating } = flats[0];
 
   return (
     <div className="app">
@@ -16,38 +15,18 @@ const App = () => {
           <Search className="search-bar" />
         </div>
         <div className="flats">
-          <Flat
-            imageUrl={imageUrl}
-            name={name}
-            price={price}
-            priceCurrency={priceCurrency}
-            rating={rating}
-          />
-          <Flat
-            imageUrl=""
-            name="My wonderful appartment on edgar street"
-            price={231}
-            priceCurrency={priceCurrency}
-            rating={3}
-          />
-          <Flat
-            imageUrl=""
-            name="My wonderful appartment on edgar street"
-            price={231}
-            rating={3}
-          />
-          <Flat
-            imageUrl=""
-            name="My wonderful appartment on edgar street"
-            price={231}
-            rating={3}
-          />
-          <Flat
-            imageUrl=""
-            name="My wonderful appartment on edgar street"
-            price={231}
-            rating={3}
-          />
+          {flats.map((flat) => {
+            return (
+              <Flat
+                key={flat.id}
+                imageUrl={flat.imageUrl}
+                name={flat.name}
+                price={flat.price}
+                priceCurrency={flat.priceCurrency}
+                rating={flat.rating}
+              />
+            );
+          })}
         </div>
       </div>
       <div className="map">
