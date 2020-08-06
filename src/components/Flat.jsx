@@ -1,7 +1,7 @@
 import React from "react";
 import "./Flat.scss";
 
-const Flat = ({ imageUrl, name, price, rating }) => {
+const Flat = ({ imageUrl, name, price, priceCurrency, rating }) => {
   return (
     <div className="flat">
       <div className="flat-img">
@@ -13,7 +13,9 @@ const Flat = ({ imageUrl, name, price, rating }) => {
         </div>
         <div className="description">
           <p>{name}</p>
-          <p>{price}</p>
+          <p>
+            {price} {priceCurrency}
+          </p>
         </div>
       </div>
     </div>
