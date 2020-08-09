@@ -1,7 +1,6 @@
 import React from "react";
 
 const Search = () => {
-  // return <input type="text" name="search" placeholder="Search..." />;
   return (
     <div className="active-pink-3 active-pink-4 mb-4">
       <input

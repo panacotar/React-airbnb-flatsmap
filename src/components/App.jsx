@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.scss";
-import flats from "../data/flatsDB.json";
+import flatsDB from "../data/flatsDB.json";
 import Search from "./Search";
 import Flat from "./Flat";
 import Map from "./Map";
 
 const App = () => {
-  // const { name, lat, lng, price, priceCurrency, imageUrl, rating } = flats[0];
+  // const { name, lat, lng, price, priceCurrency, imageUrl, rating } = flatsDB[0];
 
   return (
     <div className="app">
@@ -15,7 +15,7 @@ const App = () => {
           <Search className="search-bar" />
         </div>
         <div className="flats">
-          {flats.map((flat) => {
+          {flatsDB.map((flat) => {
             return (
               <Flat
                 key={flat.id}
