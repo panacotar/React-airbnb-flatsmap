@@ -1,39 +1,40 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.scss";
 import flatsDB from "../data/flatsDB.json";
 import Search from "./Search";
-import Flat from "./Flat";
+import FlatList from "./FlatList";
 import Map from "./Map";
 
-const App = () => {
+class App extends Component {
   // const { name, lat, lng, price, priceCurrency, imageUrl, rating } = flatsDB[0];
+  constructor(props) {
+    super(props);
+    this.state = {
+      flats: [],
+      loaded: false,
+    };
+  }
 
-  return (
-    <div className="app">
-      <div className="main">
-        <div className="search">
-          <Search className="search-bar" />
+  componentDidMount() {
+    this.setState({ flats: flatsDB, loaded: true });
+  }
+
+  render() {
+    const { flats, loaded } = this.state;
+    return (
+      <div className="app">
+        <div className="main">
+          <div className="search">
+            <Search className="search-bar" />
+          </div>
+          {loaded ? <FlatList flats={flats} /> : <h1>Loading...</h1>}
         </div>
-        <div className="flats">
-          {flatsDB.map((flat) => {
-            return (
-              <Flat
-                key={flat.id}
-                imageUrl={flat.imageUrl}
-                name={flat.name}
-                price={flat.price}
-                priceCurrency={flat.priceCurrency}
-                rating={flat.rating}
-              />
-            );
-          })}
+        <div className="map">
+          <Map />
         </div>
       </div>
-      <div className="map">
-        <Map />
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default App;
