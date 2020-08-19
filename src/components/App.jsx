@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import "./App.scss";
+import ReactMapboxGl from "react-mapbox-gl";
 import flatsDB from "../data/flatsDB.json";
 import Search from "./Search";
 import FlatList from "./FlatList";
-import Map from "./Map";
+// import Map from "./Map";
+
+const Map = ReactMapboxGl({
+  accessToken: process.env.REACT_APP_MAPBOX_TOKEN,
+});
 
 class App extends Component {
   // const { name, lat, lng, price, priceCurrency, imageUrl, rating } = flatsDB[0];
@@ -21,7 +26,6 @@ class App extends Component {
   }
 
   handleSearch = (e) => {
-    // console.log(e.target.value)
     const { value } = e.target;
     this.setState({ search: value });
   };
@@ -41,7 +45,14 @@ class App extends Component {
           {loaded ? <FlatList flats={searchedFlats} /> : <h1>Loading...</h1>}
         </div>
         <div className="map">
-          <Map />
+          {/* <Map /> */}
+          <Map
+            style="mapbox://styles/mapbox/streets-v9"
+            containerStyle={{
+              height: "100vh",
+              width: "100%",
+            }}
+          />
         </div>
       </div>
     );
