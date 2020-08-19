@@ -32,7 +32,7 @@ class App extends Component {
 
   render() {
     const { flats, loaded, search } = this.state;
-
+    const center = [13.4050, 52.5200]
     const searchedFlats = flats.filter((flat) =>
       flat.name.match(new RegExp(search, "i"))
     );
@@ -45,9 +45,9 @@ class App extends Component {
           {loaded ? <FlatList flats={searchedFlats} /> : <h1>Loading...</h1>}
         </div>
         <div className="map">
-          {/* <Map /> */}
           <Map
             style="mapbox://styles/mapbox/streets-v9"
+            center={center}
             containerStyle={{
               height: "100vh",
               width: "100%",
