@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.scss";
 import ReactMapboxGl from "react-mapbox-gl";
+import MapMarker from "./MapMarker";
 import flatsDB from "../data/flatsDB.json";
 import Search from "./Search";
 import FlatList from "./FlatList";
-// import Map from "./Map";
 
 const Map = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_TOKEN,
@@ -52,7 +52,10 @@ class App extends Component {
               height: "100vh",
               width: "100%",
             }}
-          />
+            
+          > 
+          <MapMarker />
+          </Map>
         </div>
       </div>
     );
