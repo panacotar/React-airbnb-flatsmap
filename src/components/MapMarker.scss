@@ -1,13 +1,16 @@
 .custom-marker {
-  background-color: mediumpurple;;
-  color: white;
+  background-color: mediumpurple;
+  color: lightyellow;
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 2px 3px;
   border: 1px solid white;
   font-size: 0.8rem;
+  text-align: center;
+  font-weight: bold;
 
   &.select {
     background-color: purple;
+    color: white;
     z-index: 4;
   }
 }

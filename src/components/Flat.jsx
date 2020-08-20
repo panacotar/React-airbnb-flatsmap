@@ -10,7 +10,7 @@ const Flat = ({
   priceCurrency,
   rating,
   onSelect,
-  selected
+  selected,
 }) => {
   const handleClick = () => {
     onSelect(id);

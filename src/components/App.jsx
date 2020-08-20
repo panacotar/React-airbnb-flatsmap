@@ -79,6 +79,7 @@ class App extends Component {
               return (
                 <MapMarker
                   price={flat.price}
+                  priceCurrency={flat.priceCurrency}
                   lat={flat.lat}
                   lng={flat.lng}
                   selected={selectedFlat.id === flat.id}

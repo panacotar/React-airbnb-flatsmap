@@ -2,8 +2,8 @@ import React from "react";
 import "./FlatList.scss";
 import Flat from "./Flat";
 
-const FlatList = ({ flats, onSelect, selectedFlat}) => {
-  return(
+const FlatList = ({ flats, onSelect, selectedFlat }) => {
+  return (
     <div className="flats">
       {flats.map((flat) => {
         return (
@@ -22,6 +22,6 @@ const FlatList = ({ flats, onSelect, selectedFlat}) => {
       })}
     </div>
   );
-}
+};
 
 export default FlatList;
