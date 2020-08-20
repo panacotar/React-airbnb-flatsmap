@@ -4,7 +4,7 @@ import "./MapMarker.scss";
 
 const MapMarker = ({ price, lng, lat }) => {
   return (
-    <Marker coordinates={[13.3501, 52.5145]} anchor="bottom">
+    <Marker coordinates={[lng, lat]} anchor="bottom">
       <div className="custom-marker">301eur</div>
     </Marker>
   );
