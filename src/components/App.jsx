@@ -56,7 +56,11 @@ class App extends Component {
             <Search className="search-bar" search={this.handleSearch} />
           </div>
           {loaded ? (
-            <FlatList flats={searchedFlats} onSelect={this.handleClick} />
+            <FlatList
+              flats={searchedFlats}
+              onSelect={this.handleClick}
+              selectedFlat={selectedFlat}
+            />
           ) : (
             <h1>Loading...</h1>
           )}
@@ -71,7 +75,7 @@ class App extends Component {
               width: "100%",
             }}
           >
-            {flats.map((flat) => {
+            {searchedFlats.map((flat) => {
               return (
                 <MapMarker
                   price={flat.price}

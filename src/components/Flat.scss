@@ -3,10 +3,15 @@
   height: 50vh;
   margin: auto;
   margin-bottom: 30px;
-  border: 1px solid lightgrey;
+  border: 2px solid lightgray;
   display: flex;
   flex-direction: column;
- 
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid mediumpurple;
+  }
+
   @media (max-width: 768px) {
     width: 80% ;
   }
@@ -29,5 +34,10 @@
 
   .flat-description {
     padding: 0 10px;
+  }
+
+
+  &.select {
+    border: 2px solid purple;
   }
 }

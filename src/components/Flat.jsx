@@ -10,13 +10,14 @@ const Flat = ({
   priceCurrency,
   rating,
   onSelect,
+  selected
 }) => {
   const handleClick = () => {
     onSelect(id);
   };
 
   return (
-    <div className="flat" onClick={handleClick}>
+    <div className={selected ? "flat select" : "flat"} onClick={handleClick}>
       <div className="flat-img">
         <img src={imageUrl} alt="Random flat img" />
       </div>
