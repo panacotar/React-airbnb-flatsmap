@@ -2,9 +2,21 @@ import React from "react";
 import "./Flat.scss";
 import PropTypes from "prop-types";
 
-const Flat = ({ imageUrl, name, price, priceCurrency, rating }) => {
+const Flat = ({
+  id,
+  imageUrl,
+  name,
+  price,
+  priceCurrency,
+  rating,
+  onSelect,
+}) => {
+  const handleClick = () => {
+    onSelect(id);
+  };
+
   return (
-    <div className="flat">
+    <div className="flat" onClick={handleClick}>
       <div className="flat-img">
         <img src={imageUrl} alt="Random flat img" />
       </div>
