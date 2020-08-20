@@ -19,6 +19,7 @@ class App extends Component {
       loaded: false,
       search: "",
       center: [13.405, 52.52],
+      selectedFlat: {},
     };
   }
 
@@ -33,13 +34,16 @@ class App extends Component {
 
   handleClick = (id) => {
     const { flats } = this.state;
-    const flat = flats.find((flat) => flat.id === id);
+    const selectedFlat = flats.find((flat) => flat.id === id);
 
-    this.setState({ center: [flat.lng, flat.lat] });
+    this.setState({
+      center: [selectedFlat.lng, selectedFlat.lat],
+      selectedFlat,
+    });
   };
 
   render() {
-    const { flats, loaded, search, center } = this.state;
+    const { flats, loaded, search, center, selectedFlat } = this.state;
 
     const searchedFlats = flats.filter((flat) =>
       flat.name.match(new RegExp(search, "i"))
@@ -69,7 +73,12 @@ class App extends Component {
           >
             {flats.map((flat) => {
               return (
-                <MapMarker price={flat.price} lat={flat.lat} lng={flat.lng} />
+                <MapMarker
+                  price={flat.price}
+                  lat={flat.lat}
+                  lng={flat.lng}
+                  selected={selectedFlat.id === flat.id}
+                />
               );
             })}
           </Map>

@@ -1,8 +1,13 @@
 .custom-marker {
-  background-color: purple;
+  background-color: mediumpurple;;
   color: white;
   border-radius: 5px;
   padding: 2px 5px;
   border: 1px solid white;
   font-size: 0.8rem;
+
+  &.select {
+    background-color: purple;
+    z-index: 4;
+  }
 }
