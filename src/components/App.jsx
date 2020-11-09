@@ -18,7 +18,7 @@ class App extends Component {
       flats: [],
       loaded: false,
       search: "",
-      center: [13.405, 52.52],
+      center: [13.435, 52.48],
       selectedFlat: {},
     };
   }
