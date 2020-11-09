@@ -12,6 +12,9 @@
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/style-prop-object": [0, {
+      "allow": ["App"]
+    }],
     "prettier/prettier": [
       "error", {
         "semi": true
