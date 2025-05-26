@@ -46,11 +46,14 @@ const Flat = ({
 };
 
 Flat.propTypes = {
+  id: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   priceCurrency: PropTypes.number.isRequired,
   rating: PropTypes.number.isRequired,
+  onSelect: PropTypes.func.isRequired,
+  selected: PropTypes.bool,
 };
 
 export default Flat;
